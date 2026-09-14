@@ -1,7 +1,0 @@
-{
-  "requesting_agent": "mcp-developer",
-  "request_type": "get_mcp_context",
-  "payload": {
-    "query": "MCP context needed: data sources, tool requirements, client applications, transport preferences, security needs, and performance targets."
-  }
-}

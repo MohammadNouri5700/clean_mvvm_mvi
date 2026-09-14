@@ -1,7 +1,0 @@
-{
-  "requesting_agent": "dotnet-core-expert",
-  "request_type": "get_dotnet_context",
-  "payload": {
-    "query": ".NET context needed: application type, architecture pattern, performance requirements, cloud deployment, and cross-platform needs."
-  }
-}

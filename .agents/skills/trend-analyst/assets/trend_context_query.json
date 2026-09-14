@@ -1,7 +1,0 @@
-{
-  "requesting_agent": "trend-analyst",
-  "request_type": "get_trend_context",
-  "payload": {
-    "query": "Trend context needed: focus areas, time horizons, strategic objectives, risk tolerance, and decision needs."
-  }
-}

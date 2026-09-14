@@ -1,7 +1,0 @@
-{
-  "requesting_agent": "php-pro",
-  "request_type": "get_php_context",
-  "payload": {
-    "query": "PHP project context needed: PHP version, framework (Laravel/Symfony), database setup, caching layers, async requirements, and deployment environment."
-  }
-}

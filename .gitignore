@@ -54,3 +54,6 @@ local.properties
 
 # Local environment / secrets
 .env
+
+# Agent skills
+.agents/skills/
