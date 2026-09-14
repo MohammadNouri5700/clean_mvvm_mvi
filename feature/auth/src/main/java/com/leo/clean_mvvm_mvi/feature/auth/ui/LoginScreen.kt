@@ -26,7 +26,6 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
-import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
@@ -55,6 +54,7 @@ import com.leo.clean_mvvm_mvi.core.designsystem.component.SwitchText
 import com.leo.clean_mvvm_mvi.core.designsystem.component.TextField
 import com.leo.clean_mvvm_mvi.core.designsystem.component.rememberEdgeNotificationState
 import com.leo.clean_mvvm_mvi.core.designsystem.theme.AppTheme
+import com.leo.clean_mvvm_mvi.core.ui.extension.collectAsEffect
 import java.util.Locale
 import com.leo.clean_mvvm_mvi.core.designsystem.R as DesignSystemR
 import com.leo.clean_mvvm_mvi.feature.auth.R as AuthR
@@ -67,18 +67,16 @@ fun LoginScreen(
     val state by viewModel.uiState.collectAsStateWithLifecycle()
     val edgeNotificationState = rememberEdgeNotificationState()
 
-    LaunchedEffect(Unit) {
-        viewModel.uiEvent.collect { event ->
-            when (event) {
-                is LoginEvent.ShowSnackbar -> {
-                    edgeNotificationState.showNotification(
-                        type = event.type,
-                        message = event.message
-                    )
-                }
-                is LoginEvent.Navigate -> {
-                    onNavigateToHome()
-                }
+    viewModel.uiEvent.collectAsEffect { event ->
+        when (event) {
+            is LoginEvent.ShowSnackbar -> {
+                edgeNotificationState.showNotification(
+                    type = event.type,
+                    message = event.message
+                )
+            }
+            is LoginEvent.Navigate -> {
+                onNavigateToHome()
             }
         }
     }
