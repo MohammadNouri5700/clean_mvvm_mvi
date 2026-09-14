@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="welcome_text">به نسخه راننده دات وان (تریپ) خوش آمدید.</string>
+    <string name="enter_your_phone_number">شماره تلفن همراه خود را وارد کنید.</string>
+    <string name="phone_number_hint">۰۹۱۲۳۴۵۶۷۸۹</string>
+    <string name="send_otp">ارسال کد تایید</string>
+    <string name="login_with_finger_or_face">ورود با اثر انگشت / تشخیص چهره</string>
+    <string name="privacy_and_policy">با ورود به برنامه، شرایط و قوانین حریم خصوصی را می‌پذیرید.\nنسخه ۱.۰.۰</string>
+    <string name="language">FA</string>
+</resources>

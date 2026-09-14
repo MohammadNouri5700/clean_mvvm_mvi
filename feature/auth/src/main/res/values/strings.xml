@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="welcome_text">Welcome to Dot One (Trip) Driver Version.</string>
+    <string name="enter_your_phone_number">Enter your mobile number.</string>
+    <string name="phone_number_hint">09123456789</string>
+    <string name="send_otp">Send Verification Code</string>
+    <string name="login_with_finger_or_face">Login with Fingerprint / Face ID</string>
+    <string name="privacy_and_policy">By logging in, you agree to our Privacy Policy and Terms.\nVersion 1.0.0</string>
+    <string name="language">EN</string>
+</resources>
